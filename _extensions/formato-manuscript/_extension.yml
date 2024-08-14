@@ -1,4 +1,4 @@
-title: Formato
+title: Formato Manuscript
 author: Lorenzo Fabbri
 version: 0.0.1
 quarto-required: ">=1.4.11"
@@ -6,18 +6,28 @@ contributes:
   formats:
     common:
       date-format: full
+    docx:
+      reference-doc: "styles/reference.docx"
+      knitr:
+        opts_chunk:
+          dev: "ragg_png"
+          dpi: 300
+          out.width: "80%"
     pdf:
+      documentclass: article
+      papersize: letter
+      fontsize: 12pt
+      linestretch: 2
       template-partials:
         - "partials/title.tex"
         - "partials/before-body.tex"
       include-in-header:
         - "include-in-header.tex"
       geometry:
-        - top=10pc
-        - bottom=10pc
-        - left=11pc
-        - right=11pc
-        - heightrounded
+        - top=1in
+        - bottom=1in
+        - left=1in
+        - right=1in
       colorlinks: true
       linkcolor: DarkSlateBlue
       urlcolor: DarkSlateBlue
