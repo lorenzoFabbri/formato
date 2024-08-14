@@ -1,0 +1,49 @@
+---
+title: "Some Title"
+date: August 14, 2024
+code-repo: "Access the code and analysis at <some url>"
+author:
+  - name: Lorenzo Fabbri
+    email: lorenzo.fabbri@something.com
+    orcid: some-orcid
+    affiliations:
+      - id: some-id
+        name: Some Name
+        department: Some Department
+bibliography: bibliography.bib
+csl: blank.csl
+format:
+  formato-general-pdf:
+    mainfont: "Linux Libertine O"
+    mainfontoptions:
+      - "Numbers=Proportional"
+      - "Numbers=OldStyle"
+    sansfont: "Jost"
+    monofont: "InconsolataGo"
+    monofontoptions:
+      - "Mapping=tex-ansi"
+      - "Scale=MatchLowercase"
+    mathfont: "Libertinus Math"
+    biblatex-chicago: true
+    biblio-style: authordate
+    biblatexoptions:
+      - backend=biber
+      - autolang=hyphen
+      - isbn=false
+      - uniquename=false
+    number-sections: true
+filters:
+  - acronyms
+acronyms:
+  fromfile: acronyms.yaml
+  insert_links: false
+  insert_loa: false
+  sorting: alphabetical
+editor_options:
+  chunk_output_type: console
+execute:
+  echo: false
+  warning: false
+  error: false
+  message: false
+---
